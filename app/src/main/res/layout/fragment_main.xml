@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:isScrollContainer="true">
+        <TextView android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_media_agent_text"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media types"
+            android:textSize="15sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/short_cut_button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="Set-Top box" />
+                <Button
+                    android:id="@+id/short_cut_button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Browsing history"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/short_cut_button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook likes"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/short_cut_button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tweets"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/short_cut_button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YouTube views"
+                    android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/logged_in_shape">
+            <TextView android:id="@+id/status_app_started"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_app_started"/>
+            <TextView android:id="@+id/status_service_started"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_service_started"/>
+            <TextView android:id="@+id/status_last_info_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_last_info_collection"/>
+            <TextView android:id="@+id/status_last_sent_attempt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_last_sent_attempt"/>
+            <TextView android:id="@+id/status_last_sent_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_last_sent_success"/>
+            <TextView android:id="@+id/status_facebook_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_facebook_login"
+                android:visibility="gone"/>
+            <TextView android:id="@+id/status_twitter_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_twitter_login"
+                android:visibility="gone"/>
+            <TextView android:id="@+id/status_google_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_google_login"
+                android:visibility="gone"/>
+            <TextView android:id="@+id/test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/StartService"
+            android:id="@+id/start_service_button"
+            android:singleLine="false"
+            android:layout_marginTop="20dp"
+            style="@style/AppTheme.Button"/>
+    </LinearLayout>
+</ScrollView>

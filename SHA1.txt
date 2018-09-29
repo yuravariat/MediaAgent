@@ -1,0 +1,4 @@
+// keytool -list -v -keystore c:\users\yura\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+// apk
+keytool -exportcert -alias MediaAgent -keystore D:\key.jks -list -v

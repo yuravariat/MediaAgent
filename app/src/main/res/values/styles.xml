@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">5dp</item>
+        <item name="tabPaddingStart">15dp</item>
+        <item name="tabPaddingEnd">15dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+    </style>
+    <style name="AppTheme.TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--<style name="MyToolBar" parent="Widget.AppCompat.Toolbar">-->
+        <!--<item name="android:background">@color/toolbar_background</item>-->
+        <!--<item name="android:gravity">center</item>-->
+    <!--</style>-->
+    <style name="MyTitleTextApperance" parent="@android:style/TextAppearance.Medium">
+        <!--<item name="android:textColor">@color/toolbar_title</item>-->
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="AppTheme.Button">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#eee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_btn</item>
+        <item name="android:padding">12dip</item>
+    </style>
+</resources>
